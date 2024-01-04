@@ -1,0 +1,178 @@
+<?php include 'sentMail.php';?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preload" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" />
+  </noscript>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="inquiry.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Design Inquiry Form| Frontend Web Developer Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <p id="logo"><a href="/">C</a></p>
+      <ul>
+        <li><a href="/#about-section">About</a></li>
+        <li><a href="/#projects">Work</a></li>
+        <li><a href="/#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="container">
+      <div id="inquiry-form-container">
+        <form name="inquiry" class="section" method="POST" data-netlify="true" id="inquiry" action="/success">
+          <div id="contact-info">
+            <h1>Let's Work <span class="decorative-font">Together</span></h1>
+            <p>
+              I'm thrilled to help you create a website that's functional and
+              beautiful! First, tell me more about yourself and your website
+              goals. Fill out the form below to get the ball rolling.
+            </p>
+            <p id="required-note">
+              Required fields are indicated with "<img src="/assets/asterisk.png" alt="Required field"
+                class="asterisk" />"
+            </p>
+          </div>
+          <div class="form-field">
+            <small></small><br />
+            <label for="fname">What's your name? </label>
+            <img src="/assets/asterisk.png" alt="Required field" class="asterisk" />
+            <input type="text" id="fname" name="fname" autocomplete="name" placeholder="Type your full name" />
+            <br />
+          </div>
+          <div class="form-field">
+            <small></small><br />
+            <label for="email">Where can I email you? </label>
+            <img src="/assets/asterisk.png" alt="Required field" class="asterisk" />
+            <input type="email" id="email" name="email" inputmode="email" autocomplete="email"
+              placeholder="example@email.com" />
+            <br />
+          </div>
+          <div class="form-field">
+            <small></small><br />
+            <label for="business">What's your business or organization's name?
+            </label>
+            <img src="/assets/asterisk.png" alt="Required field" class="asterisk" />
+            <input type="text" id="business" name="business" autocomplete="organization"
+              placeholder="Type the name of your business" />
+            <br />
+          </div>
+          <div class="form-field">
+            <small></small><br />
+            <label for="services">What services or products will you offer on your site?
+            </label>
+            <img src="/assets/asterisk.png" alt="Required field" class="asterisk" />
+            <textarea name="services" id="services"
+              placeholder="List your products or services and price ranges."></textarea>
+            <br />
+          </div>
+          <div class="form-field">
+            <small></small><br />
+            <label for="cta">Finish this sentence: Visitors should come to my website to... </label><img
+              src="/assets/asterisk.png" alt="Required field" class="asterisk" />
+            <input type="text" id="cta" name="cta" placeholder="Ex. Book my services" />
+            <br />
+          </div>
+          <div class="form-field">
+            <label for="deadline">When do you want to have your website completed? </label><br />
+            <input type="date" id="deadline" name="deadline" />
+            <br />
+          </div>
+          <div class="form-field">
+            <small></small><br />
+            <label for="maintenance">Who will manage your website after completion?
+            </label>
+            <img src="/assets/asterisk.png" alt="Required field" class="asterisk" />
+            <select id="manager" name="manager">
+              <option value="selectOption" selected disabled>
+                — Select an option —
+              </option>
+              <option value="designer">Web Designer</option>
+              <option value="client">Myself</option>
+              <option value="undecided">I need help deciding</option>
+            </select>
+            <br />
+          </div>
+          <div class="form-field">
+            <small></small><br />
+            <label for="budget">Do you have a budget for your website? </label><img src="/assets/asterisk.png"
+              alt="Required field" class="asterisk" />
+            <select id="budget" name="budget">
+              <option value="selectOption" selected disabled>
+                — Select a range —
+              </option>
+              <option value="sm">$800 — $1200</option>
+              <option value="md">$1500 — $2500</option>
+              <option value="lg">$3000+</option>
+            </select>
+            <br />
+          </div>
+          <button type="submit">Let's Talk</button>
+        </form>
+        <div id="aside-contact-info" class="section">
+          <div id="contact-circle-container">
+            <svg id="contact-circle" viewBox="0 0 100 100" width="100" height="100">
+              <defs>
+                <path id="circle" d="
+                          M 50, 50
+                          m -37, 0
+                          a 37,37 0 1,1 74,0
+                          a 37,37 0 1,1 -74,0" />
+              </defs>
+              <text font-size="15">
+                <textPath xlink:href="#circle">
+                  Follow Me • Follow Me • Follow Me •
+                </textPath>
+              </text>
+            </svg>
+          </div>
+          <div>
+            <hr />
+          </div>
+          <div id="social-links">
+            <ul>
+              <li>
+                <a href="https://twitter.com/corvida"><i class="fab fa-twitter fa-lg"></i></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/corvida"><i class="fab fa-instagram fa-lg"></i></a>
+              </li>
+              <li>
+                <a href="https://shegeeks.net"><i class="fas fa-rss fa-lg"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/corvida"><i class="fab fa-linkedin fa-lg"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <small>
+        Ⓒ 2020 — 2023 <a href="https://shegeeks.net">Corvida</a> | All Rights
+        Reserved</small>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
