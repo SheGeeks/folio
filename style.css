@@ -138,6 +138,11 @@ main {
   font-size: 4rem;
 }
 
+h1 .decorative-font {
+  text-transform: none;
+  font-size: 3rem;
+}
+
 section p {
   color: var(--text-gray);
   font-size: clamp(1rem, 0.242vw + 0.943rem, 1.125rem);
