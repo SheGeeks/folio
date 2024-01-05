@@ -43,7 +43,7 @@ h3 {
 }
 
 nav a {
-  color: #444;
+  color: var(--titles);
 }
 
 main {
@@ -125,7 +125,6 @@ input {
   border: none;
   border-bottom: 1px solid rgb(184, 184, 184);
   background-color: inherit;
-  /* padding: 0.75rem 0 0.5rem; */
   margin: 1rem 0;
   width: 100%;
   max-width: 700px;
@@ -247,9 +246,12 @@ small:not(footer small) {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* background-color: #ffffff; */
   background: #fff
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23608c83' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+#aside-contact-info #contact-circle text {
+  font-size: 13px;
 }
 
 #social-links {
@@ -313,7 +315,6 @@ small:not(footer small) {
   #aside-contact-info hr {
     display: block;
     height: 195px;
-    /* height: 300px; */
     width: 8px;
     background-color: #e8e8e8;
     border: none;
