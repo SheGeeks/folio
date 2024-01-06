@@ -69,7 +69,9 @@ a {
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   z-index: 10;
 }
-
+:target {
+  scroll-margin-top: 2.75rem;
+}
 #logo {
   float: left;
   padding: 1rem 0rem;
