@@ -1,8 +1,7 @@
 # Corvida's Personal Porfolio V2
 
-![Portfolio SS](/ss_v2.png)
+[![Portfolio SS](/ss_v2.png)](<[[View]](https://dev.shegeeks.net)>)
 
-## Contact
+## Get In Touch
 
-- Blog: SheGeeks.net
-- Twitter: [@Corvida](https://www.twitter.com/corvida)
+[Tech Blog](https://shegeeks.net) | [LinkedIn](https://linkedin.com/in/corvida)
