@@ -72,6 +72,7 @@ a {
 :target {
   scroll-margin-top: 2.75rem;
 }
+
 #logo {
   float: left;
   padding: 1rem 0rem;
@@ -101,15 +102,8 @@ a {
   font-weight: 600;
 }
 
-a:hover,
-.fab:hover,
-.works a:hover {
-  color: var(--accent-darkmint);
-}
-
-footer a:hover {
-  color: var(--accent-mint);
-  font-weight: 700;
+.bio a {
+  color: var(--accent-red);
 }
 
 main {
@@ -218,10 +212,6 @@ section p {
   text-align: justify;
   line-height: 2.5ch;
   border-radius: 12px;
-}
-
-.bio a {
-  color: var(--accent-red);
 }
 
 #profile-bg {
@@ -598,4 +588,18 @@ footer a {
 }
 .custom-shape-divider-top-1676312946-1 .shape-fill {
   fill: var(--accent-red);
+}
+
+/* Hover Styles */
+a:hover,
+.fab:hover,
+.works a:hover {
+  color: var(--accent-darkmint);
+  transition: all ease 0.3s;
+}
+
+#social-links svg:hover {
+  filter: invert(57%) sepia(6%) saturate(1859%) hue-rotate(117deg)
+    brightness(89%) contrast(86%);
+  transition: all ease 0.3s;
 }
